@@ -35,16 +35,16 @@ public class HomeActivity extends AppCompatActivity
 
 
     private final String recyclerViewTitleText[] = {"Agriculture", "Automotive", "Chemicals", "Construction", "Energy", "Financial Services",
-            "Food & Beverage", "Health Care", "Oil & Gas", "Oil & Gas"
-//            "Pharmaceuticals & Biotechnology"
-//            , "Printing & Publishing", "Telecommunications & Media", "Transport & Logistics","Schools",
-//            "Hotels&Resorts"
+            "Food & Beverage", "Health Care", "Oil & Gas"
+           , "Printing & Publishing", "Telecommunications & Media", "Transport & Logistics","Schools",
+
     };
 
 
     private final int recyclerViewImages[] = {
             R.mipmap.agriculture, R.mipmap.automotive, R.mipmap.chemicals, R.mipmap.construction, R.mipmap.energy, R.mipmap.finance,
-            R.mipmap.food_bev, R.mipmap.automotive, R.mipmap.gas_oil, R.mipmap.gas_oil
+            R.mipmap.food_bev, R.mipmap.health, R.mipmap.gas_oil, R.mipmap.printing, R.mipmap.media, R.mipmap.transport, R.mipmap.education,
+
 
     };
 
@@ -111,7 +111,7 @@ public class HomeActivity extends AppCompatActivity
 
                                     case 1:
 
-//                                        startActivity(new Intent(HomeActivity.this, AutomotiveListings.class));
+                                        startActivity(new Intent(HomeActivity.this, AutomotiveListings.class));
                                         break;
                                     case 2:
                                         Toast.makeText(view.getContext(), "position= " + i, Toast.LENGTH_LONG).show();

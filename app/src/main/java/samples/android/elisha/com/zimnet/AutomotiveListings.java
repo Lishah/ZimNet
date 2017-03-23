@@ -97,8 +97,8 @@ public class AutomotiveListings extends AppCompatActivity
         FirebaseUser user = mAuth.getCurrentUser();
 
 
-        TextView txtProfileEmail = (TextView) navigationView.getHeaderView(0).findViewById(R.id.userCategory);
-        txtProfileEmail.setText(user.getEmail());
+//        TextView txtProfileEmail = (TextView) navigationView.getHeaderView(0).findViewById(R.id.userCategory);
+//        txtProfileEmail.setText(user.getEmail());
     }
 
 
@@ -125,14 +125,14 @@ public class AutomotiveListings extends AppCompatActivity
 
                 viewHolder.setAutomotiveName(model.getAutomotive_name());
                 viewHolder.setAutomtiveCategory(model.getAutomotive_category());
-                viewHolder.setAgricultureUserImage(getApplicationContext(),model.getAgriculture_user_image());
+                viewHolder.setAutomotiveImage(getApplicationContext(),model.getAutomotive_image());
                 viewHolder.setLikeButton(user_key);
                 viewHolder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
 //                        Toast.makeText(AgricultureListing.this, user_key, Toast.LENGTH_SHORT).show();
 
-                        Intent profileIntent = new Intent(AutomotiveListings.this,AgricultureProfile.class);
+                        Intent profileIntent = new Intent(AutomotiveListings.this,AutomotiveProfile.class);
                         profileIntent.putExtra("user_id", user_key);
                         startActivity(profileIntent);
                     }
@@ -241,10 +241,10 @@ public class AutomotiveListings extends AppCompatActivity
         }
 
 
-    private  void setAgricultureUserImage(final Context ctx, final String agriculture_user_image){
+    private  void setAutomotiveImage(final Context ctx, final String automotive_image){
 
-        final ImageView agric_UserImage = (ImageView) mView.findViewById(R.id.agric_userprofile_imageView);
-        Picasso.with(ctx).load(agriculture_user_image).networkPolicy(NetworkPolicy.OFFLINE).into(agric_UserImage, new Callback() {
+        final ImageView auto_image = (ImageView) mView.findViewById(R.id.agric_userprofile_imageView);
+        Picasso.with(ctx).load(automotive_image).networkPolicy(NetworkPolicy.OFFLINE).into(auto_image, new Callback() {
             @Override
             public void onSuccess() {
 
@@ -254,7 +254,7 @@ public class AutomotiveListings extends AppCompatActivity
             public void onError() {
 
 
-                Picasso.with(ctx).load(agriculture_user_image).into(agric_UserImage);
+                Picasso.with(ctx).load(automotive_image).into(auto_image);
 
             }
         });
@@ -290,6 +290,9 @@ public class AutomotiveListings extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+        if (id ==R.id.action_add_user){
+            startActivity(new Intent(AutomotiveListings.this,AutomotiveSignUp.class));
         }
 
         return super.onOptionsItemSelected(item);
