@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="samples.android.elisha.com.zimnet.AgricultureSignUp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/addimg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:id="@+id/agric_profile_image"
+        />
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="20dp"-->
+        <!--android:layout_below="@id/aboutImageView">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+
+        <EditText
+            android:id="@+id/agric_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:padding="15dp"
+            android:hint="Profile Name"
+            android:ems="10"
+            android:inputType="textPersonName"
+           />
+
+        <EditText
+            android:id="@+id/agric_userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/agric_username"
+            android:layout_alignStart="@+id/agric_username"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:padding="15dp"
+            android:hint="Email"
+            android:layout_below="@+id/agric_username"
+            android:ems="10"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/agric_userCellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:hint="Mobile "
+            android:layout_alignLeft="@+id/agric_userEmail"
+            android:layout_alignStart="@+id/agric_userEmail"
+            android:padding="15dp"
+            android:layout_below="@+id/agric_userEmail"
+            android:ems="10"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/agric_userTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:layout_alignLeft="@+id/agric_userCellphone"
+            android:layout_alignStart="@+id/agric_userCellphone"
+            android:layout_below="@+id/agric_userCellphone"
+            android:padding="15dp"
+            android:hint="Office Line / Telephone"
+            android:ems="10"
+            android:inputType="phone"/>
+
+            <EditText
+                android:id="@+id/agric_userLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/agric_userTelephone"
+                android:layout_alignStart="@+id/agric_userTelephone"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:hint="Postal Address /Location"
+                android:padding="15dp"
+                android:ems="10"
+                android:layout_below="@+id/agric_userTelephone"
+                android:inputType="textPostalAddress"/>
+
+
+            <EditText
+                android:id="@+id/agric_userProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/agric_userLocation"
+                android:layout_alignStart="@+id/agric_userLocation"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:layout_below="@+id/agric_userLocation"
+                android:padding="15dp"
+                android:ems="10"
+                android:hint="Profile .eg, About your business"
+                android:inputType="textPersonName"
+                />
+
+
+            <EditText
+                android:id="@+id/agric_userCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:layout_alignLeft="@+id/agric_userLocation"
+                android:layout_alignStart="@+id/agric_userLocation"
+                android:layout_below="@+id/agric_userProfile"
+                android:ems="10"
+                android:hint="Category eg Agronomer, Livestock"
+                android:inputType="textPersonName"
+               />
+
+            <Button
+                android:text="Add to DIRECTORY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_below="@+id/agric_userCategory"
+                android:paddingTop="20dp"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#4CAF50"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/agric_submitBtn"/>
+
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+</ScrollView>

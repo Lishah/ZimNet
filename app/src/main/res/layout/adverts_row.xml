@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+
+    app:cardCornerRadius="5dp">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="100dp">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:paddingLeft="4dp"
+    android:paddingTop="4dp"
+
+    >
+  <TextView
+      android:id="@+id/advert_title"
+      android:text="Title goes here"
+      android:padding="8dp"
+      android:textSize="16sp"
+      android:textColor="@color/colorPrimary"
+      android:textStyle="bold"
+      android:layout_width="match_parent"
+      android:paddingBottom="40dp"
+      android:layout_height="wrap_content"
+      />
+
+
+
+
+    <TextView
+        android:id="@+id/advert_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+
+
+        android:text="Username goes here"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        />
+    <!--<TextView-->
+        <!--android:id="@+id/advert_description"-->
+        <!--android:padding="8dp"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:text="Description goes here"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_height="wrap_content"/>-->
+</LinearLayout>
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:paddingLeft="4dp"-->
+        <!--&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/advert_user_name"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="150dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="8dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="bottom"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Username goes here"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/green"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="12sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="3 Days ago"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:padding="8dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="12sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/green"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="end"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/advert_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/place_img"
+        android:background="@color/green"
+        android:scaleType="centerCrop"
+        android:layout_gravity="end"
+        android:adjustViewBounds="true"
+        />
+
+
+
+
+</android.support.v7.widget.CardView>

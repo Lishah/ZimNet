@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="6dp">
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/UserLinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="fill"
+            android:scaleType="centerCrop"
+            android:id="@+id/agric_userprofile_imageView"
+            android:src="@mipmap/profile"/>
+
+
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/agric_username_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="-5dp"
+                android:textColor="#000"
+                android:padding="2dp"
+                android:text="User Name"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/agric_usercategory_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:layout_below="@+id/profileUserName"
+                android:text="Category"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"/>
+            <ImageButton
+                android:id="@+id/likeBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#fff"
+                android:layout_gravity="right"
+                android:src="@mipmap/likenavy"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

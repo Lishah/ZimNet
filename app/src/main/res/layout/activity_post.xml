@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="samples.android.elisha.com.zimnet.PostActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/imageSelect"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:text="Click here to add imge"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/addimg"
+
+       />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="20dp">
+
+
+    <EditText
+        android:id="@+id/titleField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:padding="15dp"
+        android:ems="10"
+        android:hint="Advert Title"
+        android:textColor="@color/colorPrimary"
+
+        android:textColorHint="@color/green"
+        android:inputType="textPersonName"
+       />
+
+    <EditText
+        android:id="@+id/descField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Advert Description"
+        android:textColorHint="@color/green"
+        android:textColor="@color/colorPrimary"
+
+        />
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="Post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary"
+        android:textColor="#d5d5d6"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/submitBtn"/>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:text="TERMS AND CONDITIONS"/>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</RelativeLayout>

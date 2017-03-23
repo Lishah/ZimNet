@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "898029573040",
+    "firebase_url": "https://connectzim-25ac2.firebaseio.com",
+    "project_id": "connectzim-25ac2",
+    "storage_bucket": "connectzim-25ac2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898029573040:android:b600c6c3b434a1ef",
+        "android_client_info": {
+          "package_name": "samples.android.elisha.com.connectzim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898029573040-6onelkp7vgqqhn0h30g2ef25s4gq8ppt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "samples.android.elisha.com.connectzim",
+            "certificate_hash": "417fc6657f21253e39b2b263dcda601024eb4cc4"
+          }
+        },
+        {
+          "client_id": "898029573040-8l02tiqq01ue59u04da98funjeoa5qqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK5N8C1L0IORFn5YA6kEDWe3MF6nHm0k8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898029573040-8l02tiqq01ue59u04da98funjeoa5qqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898029573040:android:f355567e432f1281",
+        "android_client_info": {
+          "package_name": "samples.android.elisha.com.zimnet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898029573040-h620k9mt0kmdurl4u2uf2s5ra3t4spom.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "samples.android.elisha.com.zimnet",
+            "certificate_hash": "417fc6657f21253e39b2b263dcda601024eb4cc4"
+          }
+        },
+        {
+          "client_id": "898029573040-8l02tiqq01ue59u04da98funjeoa5qqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK5N8C1L0IORFn5YA6kEDWe3MF6nHm0k8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898029573040-8l02tiqq01ue59u04da98funjeoa5qqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
